@@ -1,0 +1,5 @@
+% Example feature extraction function
+function features = extractFeatures(faceImage)
+    faceImageGray = rgb2gray(faceImage); % Ensure image is grayscale
+    features = extractHOGFeatures(faceImageGray); % HOG features
+end
